@@ -32,7 +32,7 @@ const AdviceGenerator = () => {
     <div className="flex flex-col justify-center items-center w-full h-screen bg-[#1f2632]">
       <div className="flex items-center gap-3 mb-8">
         <h1 className="text-white font-bold text-4xl">Advice Generator</h1>
-        <FaReact className="text-[#61DAFB] text-3xl animate-spin-slow" />
+        <FaReact className="text-[#61DAFB] text-4xl animate-spin-slow" />
       </div>
       <div className="flex flex-col p-[5px] items-center w-[500px] h-[350px] rounded-[15px] bg-[#323a49] relative md:w-[400px]">
         <p className="text-[#52ffa8] text-center mt-8">
