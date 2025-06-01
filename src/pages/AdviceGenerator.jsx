@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import gen from '../assets/icon-dice.svg';
-import { FaReact } from 'react-icons/fa';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import gen from "../assets/icon-dice.svg";
+import { FaReact } from "react-icons/fa";
 
 const AdviceGenerator = () => {
-  const [advice, setAdvice] = useState('');
+  const [advice, setAdvice] = useState("");
   const [adviceId, setAdviceId] = useState(null);
   const initialFetchDone = React.useRef(false);
 
@@ -35,19 +35,10 @@ const AdviceGenerator = () => {
         <FaReact className="text-[#61DAFB] text-4xl animate-spin-slow" />
       </div>
       <div className="flex flex-col p-[5px] items-center w-[500px] h-[350px] rounded-[15px] bg-[#323a49] relative md:w-[400px]">
-        <p className="text-[#52ffa8] text-center mt-8">
-          Advice ID: {adviceId}
-        </p>
-        <p className="text-center mt-12 text-white text-[28px]">
-          {advice}
-        </p>
-        
-        {/* You can add your SVG divider here if needed */}
-        <div className="mt-12 flex justify-center">
-          {/* SVG content */}
-        </div>
+        <p className="text-[#52ffa8] text-center mt-8">Advice ID: {adviceId}</p>
+        <p className="text-center mt-12 text-white text-[28px]">{advice}</p>
 
-        <button 
+        <button
           className="rounded-full p-[10px] bg-[#52ffa8] absolute -bottom-5 cursor-pointer hover:shadow-[0_3px_8px_0_#52ffa8] transition-all duration-500"
           onClick={getAdvice}
         >
@@ -58,4 +49,4 @@ const AdviceGenerator = () => {
   );
 };
 
-export default AdviceGenerator; 
+export default AdviceGenerator;
